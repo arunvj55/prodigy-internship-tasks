@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="header">
+        <div class="logo">DevPortfolio</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Vijay H</span></h1>
+            <p>Aspiring Web Developer & Software Engineer</p>
+            <a href="#projects" class="cta-btn">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about" class="section-padding">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I am a passionate frontend developer currently completing an internship program at Prodigy Infotech. I specialize in building responsive, efficient, and accessible web solutions combining clean semantics with interactive dynamic structures.</p>
+                    <p><strong>Education:</strong> Bachelor of Science in Computer Science / Engineering Development Track</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section-padding alternate-bg">
+        <div class="container">
+            <h2>Core Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card"><h3>HTML5</h3><p>Semantic Layout Control</p></div>
+                <div class="skill-card"><h3>CSS3</h3><p>Flexbox, Grid & Animation</p></div>
+                <div class="skill-card"><h3>JavaScript</h3><p>ES6 Core Logic Operations</p></div>
+                <div class="skill-card"><h3>Git & GitHub</h3><p>Version Control Systems</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <h2>Recent Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Landing Page</h3>
+                    <p>Responsive interface equipped with modern scroll styling dynamics built natively.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Stopwatch Web App</h3>
+                    <p>High-precision execution monitoring application with live split capture options.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Tic-Tac-Toe Game</h3>
+                    <p>Interactive 3x3 array gaming workspace with immediate rule check loops.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding alternate-bg">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <form id="contactForm" class="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email Address" required>
+                <textarea id="message" rows="5" placeholder="Your Message Content Here..." required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
