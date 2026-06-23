@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #111827, #312e81);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.game-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.status {
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-weight: 500;
+    color: #cbd5e1;
+}
+
+/* 3x3 CSS Grid System */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.cell {
+    background-color: #1e1b4b;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.cell:hover {
+    background-color: #2e2a72;
+}
+
+.cell:active {
+    transform: scale(0.95);
+}
+
+/* Individual mark styling colors */
+.cell.x-mark {
+    color: #38bdf8; /* Bright Cyan */
+}
+
+.cell.o-mark {
+    color: #f43f5e; /* Vibrant Rose */
+}
+
+.restart-btn {
+    background-color: #10b981;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.restart-btn:hover {
+    background-color: #059669;
+    transform: translateY(-2px);
+}
